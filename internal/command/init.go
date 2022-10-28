@@ -486,6 +486,7 @@ the backend configuration is present and valid.
 	return back, true, diags
 }
 
+// TODO: Adicionar o retry nessa função
 // Load the complete module tree, and fetch any missing providers.
 // This method outputs its own Ui.
 func (c *InitCommand) getProviders(config *configs.Config, state *states.State, upgrade bool, pluginDirs []string, flagLockfile string) (output, abort bool, diags tfdiags.Diagnostics) {
